@@ -20,6 +20,9 @@ import {
   GraduationCap,
   Clock,
   MapPin,
+  HelpCircle,
+  UserCheck,
+  Mail,
 } from "lucide-react";
 import { Button } from "./components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card";
@@ -52,6 +55,8 @@ import sparkAndSyncPoster from "../assets/spark.png";
 import projectDisplayPoster from "../assets/PROJECT-DISPLAY.png";
 import paperPresentationPoster from "../assets/pp.png";
 import majestronicsLogo from "../assets/Majestronicz.png";
+import ennavaIrukkumPoster from "../assets/Nerukku-Ner.jpeg";
+import nerukkuNerPoster from "../assets/ennava-irukum.png";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -133,6 +138,18 @@ export default function App() {
       icon: MapPin,
       poster: kashmirPoster,
     },
+    {
+      title: "Ennava Irukkum?",
+      description: "Nambi vaanga sandhoshama ponga",
+      icon: HelpCircle,
+      poster: ennavaIrukkumPoster,
+    },
+    {
+      title: "Nerukku Ner !!",
+      description: "Mudincha mothi paar",
+      icon: UserCheck,
+      poster: nerukkuNerPoster,
+    },
   ];
 
   const othersEvents = [
@@ -210,7 +227,7 @@ export default function App() {
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection("home")}>
               <img src={wavesLogo} alt="Waves Logo" className="h-10 w-10 object-contain" />
               <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                Waves'26
+                Waves
               </span>
             </div>
 
@@ -730,9 +747,9 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-slate-950 border-t border-slate-900 py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-8">
             {/* Logo and Description */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left mx-auto md:mx-0">
               <div className="flex items-center gap-2 justify-center md:justify-start mb-3">
                 <img src={wavesLogo} alt="Waves Logo" className="h-10 w-10 object-contain" />
                 <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
@@ -745,8 +762,19 @@ export default function App() {
               </p>
             </div>
 
+            {/* Contact */}
+            <div className="text-center md:text-left mx-auto md:mx-0">
+              <h3 className="font-semibold mb-4 text-cyan-400">Contact</h3>
+              <div className="flex items-center gap-2 text-sm text-slate-400 justify-center md:justify-start">
+                <Mail className="h-4 w-4 text-cyan-400" />
+                <a href="mailto:cegseee@gmail.com" className="hover:text-cyan-400 transition-colors">
+                  cegseee@gmail.com
+                </a>
+              </div>
+            </div>
+
             {/* Social Media */}
-            <div className="text-center">
+            <div className="text-center mx-auto md:mx-0">
               <h3 className="font-semibold mb-4 text-cyan-400">Follow Us</h3>
               <div className="flex gap-4 justify-center">
                 <a
