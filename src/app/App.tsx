@@ -55,8 +55,8 @@ import sparkAndSyncPoster from "../assets/spark.png";
 import projectDisplayPoster from "../assets/PROJECT-DISPLAY.png";
 import paperPresentationPoster from "../assets/pp.png";
 import majestronicsLogo from "../assets/Majestronicz.png";
-import ennavaIrukkumPoster from "../assets/Nerukku-Ner.jpeg";
-import nerukkuNerPoster from "../assets/ennava-irukum.png";
+import ennavaIrukkumPoster from "../assets/ennava-irukum.png";
+import nerukkuNerPoster from "../assets/Nerukku-Ner.jpeg";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
