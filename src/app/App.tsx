@@ -210,7 +210,7 @@ export default function App() {
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection("home")}>
               <img src={wavesLogo} alt="Waves Logo" className="h-10 w-10 object-contain" />
               <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                Waves
+                Waves'26
               </span>
             </div>
 
